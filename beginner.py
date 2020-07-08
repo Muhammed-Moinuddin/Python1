@@ -17,3 +17,22 @@ else : print ('{0} is not divisible by 5'.format(a))
 #First input multiple of 7 or not
 if a % 7 == 0 : print ('{0} is multiple of 7'.format(a))
 else : print ('{0} is not multiple of 7'.format(a))
+#Comparision of input
+if a > b : print('{0} > {1}'.format(a,b))
+elif a < b : print('{0} < {1}'.format(a,b))
+else : print('{0} = {1}'.format(a,b))
+#Program for grading
+roll_num = int(input("Please enter roll number: "))
+marks_1 = int(input("Please enter obtained marks for first subject : "))
+marks_2 = int(input("Please enter obtained marks for second subject : "))
+marks_3 = int(input("Please enter obtained marks for third subject : "))
+total_marks = marks_1+marks_2+marks_3
+avg = total_marks/3
+print("Total marks:",total_marks)
+print("Average:",avg)
+print("RESULT:")
+if avg >= 80 : print("Grade A+")
+elif avg >= 70 : print("Grade A")
+elif avg >= 60 : print("Grade B")
+elif avg >= 50 : print("Grade c")
+elif avg == 49 or avg <= 49 : print("Fail")
